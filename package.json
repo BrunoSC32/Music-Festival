@@ -28,6 +28,6 @@
   },
   "scripts": {
     "build": "gulp styles",
-    "dev": "gulp dev"
+    "dev": "gulp"
   }
 }
