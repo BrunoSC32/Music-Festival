@@ -419,3 +419,15 @@ body > section {
 .main-nav a:hover {
   color: #fdda00;
 }
+
+.footer {
+  background-color: #F53756;
+  font-size: large;
+  padding: 2rem;
+}
+.footer p {
+  margin: 0;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: capitalize;
+}/*# sourceMappingURL=app.css.map */
