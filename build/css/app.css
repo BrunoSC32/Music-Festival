@@ -460,6 +460,24 @@ body > section {
   font-weight: 700;
 }
 
+@media (min-width: 768px) {
+  .about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.about__content h2 {
+  margin: 0;
+  padding-top: 4rem;
+}
+.about__content .about__Subtitle {
+  color: #4CB8B3;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
 .footer {
   background-color: #F53756;
   font-size: large;
