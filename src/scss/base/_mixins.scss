@@ -1,4 +1,5 @@
 @use 'variables' as v;
+@use "sass:color";
 
 @mixin phone {
     @media (min-width: v.$phone){
@@ -34,4 +35,10 @@
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+@mixin odd-bg($color, $lightness: 0%) {
+  li:nth-child(odd) {
+    background-color: color.adjust($color: $color, $lightness: $lightness);
+  }
 }

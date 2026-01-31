@@ -478,6 +478,59 @@ body > section {
   font-size: 2.4rem;
 }
 
+.lineup {
+  background-color: #F53756;
+}
+.lineup h3,
+.lineup .day {
+  text-align: center;
+  color: #FFFFFF;
+}
+.lineup .day {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .scenarios-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+.scenarios-container .bg-green {
+  background-color: #4CB8B3;
+}
+.scenarios-container .bg-green li:nth-child(odd) {
+  background-color: rgb(112.516, 198.484, 194.504);
+}
+.scenarios-container .bg-yellow {
+  background-color: #fdda00;
+}
+.scenarios-container .bg-yellow li:nth-child(odd) {
+  background-color: rgb(255, 226.5019762846, 49);
+}
+.scenarios-container .name-scenario {
+  text-align: center;
+  font-size: 3.4rem;
+  font-weight: 900;
+  margin: 4rem;
+}
+
+.calendar {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.calendar li {
+  padding: 2rem;
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+.calendar li span {
+  font-weight: normal;
+}
+
 .footer {
   background-color: #F53756;
   font-size: large;

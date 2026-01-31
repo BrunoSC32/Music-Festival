@@ -1,0 +1,58 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+@use "sass:color";
+
+.lineup {
+    background-color: v.$pink;
+    
+    h3,
+    .day {
+        text-align: center;
+        color: v.$white;
+    }
+
+    .day {
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+}
+
+.scenarios-container {
+
+    @include m.tablet {
+        @include m.grid(2);
+    }
+
+    .bg-green {
+        background-color: v.$green;
+
+        @include m.odd-bg(v.$green, 10%);
+    }
+
+    .bg-yellow {
+        background-color: v.$yellow;
+
+        @include m.odd-bg(v.$yellow, 10%);
+    }
+
+    .name-scenario {
+        text-align: center;
+        font-size: 3.4rem;
+        font-weight: 900;
+        margin: 4rem
+    }
+}
+
+.calendar {
+    @include m.reset-list;
+    
+
+    li {
+        padding: 2rem;
+        font-weight: bold;
+        font-size: 2.2rem;
+        span {
+            font-weight: normal;
+        }
+    }
+}
