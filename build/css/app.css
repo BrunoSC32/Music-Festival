@@ -420,6 +420,45 @@ body > section {
   color: #fdda00;
 }
 
+.hero {
+  position: relative;
+  max-height: 70rem;
+  min-height: 50rem;
+}
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(117, 47, 151, 0.6);
+  display: flex;
+  align-items: center;
+}
+.hero video {
+  display: block;
+  width: auto;
+}
+@media (min-width: 1200px) {
+  .hero video {
+    width: 100%;
+  }
+}
+
+.hero__content {
+  z-index: 2;
+}
+.hero__content h2 {
+  color: #FFFFFF;
+  font-size: 7rem;
+  margin: 0;
+}
+.hero__content p {
+  color: #FFFFFF;
+  background-color: #F53756;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
 .footer {
   background-color: #F53756;
   font-size: large;
