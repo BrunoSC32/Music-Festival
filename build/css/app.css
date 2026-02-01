@@ -568,6 +568,46 @@ body > section {
   object-fit: cover;
 }
 
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+  animation: fadeIn ease-in 0.5s;
+}
+.modal.fadeOut {
+  animation: fadeOut ease-in 0.5s;
+}
+.modal img {
+  max-width: 100rem;
+}
+.modal .btn-close {
+  border-radius: 50%;
+  font-weight: bold;
+  width: 4rem;
+  height: 4rem;
+  background-color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  100% {
+    opacity: 0%;
+  }
+  0% {
+    opacity: 1;
+  }
+}
 .container-tickets {
   background-color: #4CB8B3;
 }
