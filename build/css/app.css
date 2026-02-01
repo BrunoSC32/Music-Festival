@@ -644,6 +644,12 @@ body > section {
   }
 }
 
+.pase {
+  transition: transform 0.3s ease-in-out;
+}
+.pase:hover {
+  transform: scale(1.1);
+}
 .pase-name {
   color: #FFFFFF;
   text-align: center;
