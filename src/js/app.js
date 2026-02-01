@@ -25,9 +25,12 @@ function loadGallery() {
     for (let i = 1; i <= NUM_IMG; i++) {
 
         const img = document.createElement('IMG')
+        img.loading = 'lazy'
+        img.width = '300'
+        img.height = '200'
         img.src = `src/img/gallery/full/${i}.jpg`
         img.alt = 'image gallery'
-
+        
         img.onclick = () => {
             modalImage(i)
         }
