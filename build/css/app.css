@@ -531,6 +531,73 @@ body > section {
   font-weight: normal;
 }
 
+.container-tickets {
+  background-color: #4CB8B3;
+}
+.container-tickets h3 {
+  color: #FFFFFF;
+}
+.container-tickets .tickets {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container-tickets .tickets {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.pase-name {
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 800;
+  font-size: 3.6rem;
+}
+.pase-title {
+  background-color: #F53756;
+  text-align: center;
+  padding: 1rem 0;
+}
+.pase-title p {
+  color: #FFFFFF;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+.pase-body {
+  background-color: #FFFFFF;
+}
+.pase-body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pase-body ul li {
+  padding: 2rem;
+  font-size: 2.4rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+.pase-footer {
+  background-color: #FFFFFF;
+  padding: 3rem;
+}
+.pase-footer p {
+  background-color: #752F97;
+  color: #FFFFFF;
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 0;
+}
+.pase-footer p:hover {
+  background-color: rgb(86.8636363636, 34.8939393939, 112.1060606061);
+}
+
 .footer {
   background-color: #F53756;
   font-size: large;
