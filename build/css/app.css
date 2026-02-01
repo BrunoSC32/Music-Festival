@@ -394,6 +394,15 @@ body > section {
     text-align: left;
   }
 }
+@media (min-width: 768px) {
+  .header.fixed {
+    position: fixed;
+    right: 0;
+    left: 0;
+    box-shadow: 0.1rem 0.2rem 0.3rem #333;
+    animation: slideDown ease-in-out 0.5s;
+  }
+}
 
 .main-nav {
   display: flex;
@@ -420,6 +429,14 @@ body > section {
   color: #fdda00;
 }
 
+@keyframes slideDown {
+  from {
+    transform: translateY(-70px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 .hero {
   position: relative;
   max-height: 70rem;

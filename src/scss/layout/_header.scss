@@ -22,6 +22,18 @@
             text-align: left;
         }
     }
+
+    @include m.tablet {
+
+        &.fixed {
+            position: fixed;
+            right: 0;
+            left: 0;
+            box-shadow: .1rem .2rem .3rem #333;
+
+            animation: slideDown ease-in-out 0.5s;
+        }
+    }
 }
 
 .main-nav {
@@ -47,4 +59,13 @@
             color: v.$yellow;
         }
     }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-70px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }

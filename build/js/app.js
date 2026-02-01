@@ -1,7 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
     loadGallery()
+    navBar()
 })
 
+function navBar() {
+    const header = document.querySelector('.header')
+    const hero = document.querySelector('.hero')
+
+    document.addEventListener('scroll', () => {
+        if(hero.getBoundingClientRect().bottom < 1) {
+            header.classList.add('fixed')
+        } else {
+            header.classList.remove('fixed')
+        }
+    })
+}
 
 function loadGallery() {
 
